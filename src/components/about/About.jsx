@@ -23,27 +23,32 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>10+ Years Working in Software Development</small>
             </article>
 
-            <article className="about__card">
+            {/* <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
               <small>200+ Worldwide</small>
-            </article>
+            </article> */}
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>30+ Completed</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos
-            voluptatem eius dolorem maiores nihil ducimus at rem ullam
-            reprehenderit quidem quia deserunt, molestiae, eligendi amet
-            repellat molestias quos totam.
+            Globally experienced Full Stack / Mobile / XR Developer and
+            Technical Project Manager with excellent problem-solving skills as
+            well as a proven ability to pick up new frameworks / technologies
+            quickly. A team player and personable leader with outstanding soft
+            skills well versed in Agile/Scrum. Spent the last 8 years working (6
+            years remote) in the US as a Software Consultant for a Fortune 500
+            technology company where I provided both innovative technical
+            solutions to customers as well as internally manage teams of
+            developers.
           </p>
 
           <a href="#contact" className="btn btn-primary">
