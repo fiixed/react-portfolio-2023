@@ -3,16 +3,18 @@ import './portfolio.css';
 import IMG1 from '../../assets/nasa.png';
 import IMG2 from '../../assets/hikehunter.png';
 import IMG3 from '../../assets/pong.png';
-import IMG4 from '../../assets/portfolio4.jpg';
-import IMG5 from '../../assets/portfolio5.png';
-import IMG6 from '../../assets/portfolio6.jpg';
+import IMG4 from '../../assets/projectmgmtgraphql.png';
+import IMG5 from '../../assets/ecommerceapi.png';
+import IMG6 from '../../assets/portfolio2023.png';
+import IMG7 from '../../assets/portfolio2021.png';
+import IMG8 from '../../assets/ecommerce.png';
 
 const data = [
   {
     id: 1,
     image: IMG1,
     title: 'NASA Mission Control API',
-    sub: 'Mostly backend project using Express, Node, Mongo w/ React frontend.  Hosted on AWS w/ Docker',
+    sub: 'Mostly backend project using Express, Node, Mongo w/ React frontend.  Hosted on AWS w/ Docker.',
     github: 'https://github.com/fiixed/nasa-mission-control',
     demo: 'https://andrewsherrod.com/',
   },
@@ -20,7 +22,7 @@ const data = [
     id: 2,
     image: IMG2,
     title: 'Hike Hunter',
-    sub: 'Full stack project using EJS, Express and Mongo',
+    sub: 'Full stack project using EJS, Express and Mongo.',
     github: 'https://github.com/fiixed/hikehunter',
     demo: 'https://hike-hunter.onrender.com/',
   },
@@ -34,23 +36,40 @@ const data = [
   {
     id: 4,
     image: IMG4,
-    title: 'Maintaining tasks and tracking progress',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16955822-Maintaining-tasks-and-tracking-progress',
+    title: 'Project Mgmt GraphQL API',
+    sub: 'Mostly backend project using GraphQL w/ React frontend.',
+    github: 'https://github.com/fiixed/project-mgmt-app-graphql/tree/main',
+    demo: 'https://project-mgmt-app-graphql-frontend.onrender.com/',
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma',
+    title: 'NodeJS E-Commerce API',
+    sub: 'Backend-only API for e-commerce site using Express, Cloudinary, Stripe and Mongo (Frontend coming soon).',
+    github: 'https://github.com/fiixed/nodejs-ecommerce-api',
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/15887665-Orion-UI-kit-Charts-templates-infographics-in-Figma',
+    title: 'Andrew Sherrod 2023 Portfolio',
+    sub: 'Frontend-only React portfolio refreshed for 2023.  Built from scratch, no templates.',
+    github: 'https://github.com/fiixed/react-portfolio-2023',
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: 'Andrew Bell 2021 Portfolio',
+    sub: 'Frontend-only React portfolio built from scratch in 2021.  Hosted on Firebase.  (Bell is my maiden name).',
+    github: 'https://github.com/fiixed/react-portfolio',
+    demo: 'https://andrew-bell-react-portfolio.web.app/',
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title: 'Full Stack E-commerce w/ Stripe',
+    sub: 'Capstone project built with React, Redux, Ant, Node, Express, Cloudinary, Stripe, Firebase and Mongo',
+    github: 'https://github.com/fiixed/react-whitelabel-ecommerce-front',
+    demo: 'https://github.com/fiixed/react-whitelabel-ecommerce-back',
   },
 ];
 
@@ -70,13 +89,25 @@ const Portfolio = () => {
               <h3>{title}</h3>
               <small className="text-light">{sub}</small>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
-                  Github
-                </a>
-                { demo ? <a href={demo} className="btn btn-primary" target="_blank">
-                  Live Demo
-                </a> : null}
-                
+                {id == 8 ? (
+                  <a href={github} className="btn" target="_blank">
+                    Github Front
+                  </a>
+                ) : (
+                  <a href={github} className="btn" target="_blank">
+                    Github
+                  </a>
+                )}
+                {demo && id!=8 ? (
+                  <a href={demo} className="btn btn-primary" target="_blank">
+                    Live Demo
+                  </a>
+                ) : null}
+                {id==8 ? (
+                  <a href={demo} className="btn btn-primary" target="_blank">
+                    Github Back
+                  </a>
+                ) : null}
               </div>
             </article>
           );
