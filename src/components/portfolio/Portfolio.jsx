@@ -8,6 +8,10 @@ import IMG5 from '../../assets/ecommerceapi.png';
 import IMG6 from '../../assets/portfolio2023.png';
 import IMG7 from '../../assets/portfolio2021.png';
 import IMG8 from '../../assets/ecommerce.png';
+import IMG9 from '../../assets/hookstactoe.png';
+import IMG10 from '../../assets/reduxtactoe.png';
+import IMG11 from '../../assets/video_diary.png';
+import IMG12 from '../../assets/invest_austin.png';
 
 const data = [
   {
@@ -71,6 +75,36 @@ const data = [
     github: 'https://github.com/fiixed/react-whitelabel-ecommerce-front',
     demo: 'https://github.com/fiixed/react-whitelabel-ecommerce-back',
   },
+  {
+    id: 9,
+    image: IMG9,
+    title: 'React Hooks Tac Toe',
+    sub: 'I built two versions of the same game, one using Hooks and another using Redux for state management',
+    github: 'https://github.com/fiixed/react-hooks-tac-toe',
+    demo: 'https://react-hooks-tac-toe.web.app/',
+  },
+  {
+    id: 10,
+    image: IMG10,
+    title: 'React Redux Tac Toe',
+    sub: 'I built two versions of the same game, one using Hooks and another using Redux for state management',
+    github: 'https://github.com/fiixed/react-redux-tac-toe',
+    demo: 'https://react-redux-tac-toe-9.web.app/',
+  },
+  {
+    id: 11,
+    image: IMG11,
+    title: 'Video Diary',
+    sub: 'Video diary mobile app built using Flutter',
+    github: 'https://github.com/fiixed/Video-Diary-Flutter',
+  },
+  {
+    id: 12,
+    image: IMG12,
+    title: 'Invest Austin',
+    sub: 'Google Tango AR app built for the City of Austin.  Was presented at Unite 17, see link below for presentation',
+    youtube: 'https://www.youtube.com/watch?v=QDQsg1hPa38',
+  },
 ];
 
 const Portfolio = () => {
@@ -80,7 +114,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, sub, github, demo }) => {
+        {data.map(({ id, image, title, sub, github, demo, youtube }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
@@ -98,12 +132,18 @@ const Portfolio = () => {
                     Github
                   </a>
                 )}
-                {demo && id!=8 ? (
+                {id == 12 ? (
+                  <a href={github} className="btn" target="_blank">
+                    YouTube
+                  </a>
+                ) : null}
+
+                {demo && id != 8 ? (
                   <a href={demo} className="btn btn-primary" target="_blank">
                     Live Demo
                   </a>
                 ) : null}
-                {id==8 ? (
+                {id == 8 ? (
                   <a href={demo} className="btn btn-primary" target="_blank">
                     Github Back
                   </a>
