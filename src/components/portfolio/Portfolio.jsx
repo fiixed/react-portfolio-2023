@@ -102,7 +102,7 @@ const data = [
     id: 12,
     image: IMG12,
     title: 'Invest Austin',
-    sub: 'Google Tango AR app built for the City of Austin.  Was presented at Unite 17, see link below for presentation',
+    sub: 'Google Tango AR app built for the City of Austin.  Was presented at Unite 17, see link below for conference Apresentation',
     youtube: 'https://www.youtube.com/watch?v=QDQsg1hPa38',
   },
 ];
