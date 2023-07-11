@@ -12,6 +12,7 @@ import IMG9 from '../../assets/hookstactoe.png';
 import IMG10 from '../../assets/reduxtactoe.png';
 import IMG11 from '../../assets/video_diary.png';
 import IMG12 from '../../assets/invest_austin.png';
+import IMG13 from '../../assets/agview.png';
 
 const data = [
   {
@@ -72,8 +73,8 @@ const data = [
     image: IMG8,
     title: 'Full Stack E-commerce w/ Stripe',
     sub: 'Capstone project built with React, Redux, Ant, Node, Express, Cloudinary, Stripe, Firebase and Mongo',
-    github: 'https://github.com/fiixed/react-whitelabel-ecommerce-front',
-    demo: 'https://github.com/fiixed/react-whitelabel-ecommerce-back',
+    githubfront: 'https://github.com/fiixed/react-whitelabel-ecommerce-front',
+    githubback: 'https://github.com/fiixed/react-whitelabel-ecommerce-back',
   },
   {
     id: 9,
@@ -105,6 +106,13 @@ const data = [
     sub: 'Google Tango AR app built for the City of Austin.  Was presented at Unite 17, see link below for conference Apresentation',
     youtube: 'https://www.youtube.com/watch?v=QDQsg1hPa38',
   },
+  {
+    id: 13,
+    image: IMG13,
+    title: 'AgView',
+    sub: 'Google Tango AR app built for the City of Austin.  Was presented at Unite 17, see link below for conference Apresentation',
+    appstore: 'https://www.youtube.com/watch?v=QDQsg1hPa38',
+  },
 ];
 
 const Portfolio = () => {
@@ -114,45 +122,64 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, sub, github, demo, youtube }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <small className="text-light">{sub}</small>
-              <div className="portfolio__item-cta">
-                {id == 8 ? (
-                  <a href={github} className="btn" target="_blank">
-                    Github Front
-                  </a>
-                ) : null}
-                {id != 8 && id!=12 ? (
-                  <a href={github} className="btn" target="_blank">
-                    Github
-                  </a>
-                ) : null}
-                {id == 12 ? (
-                  <a href={github} className="btn" target="_blank">
-                    YouTube
-                  </a>
-                ) : null}
+        {data.map(
+          ({
+            id,
+            image,
+            title,
+            sub,
+            github,
+            githubfront,
+            githubback,
+            demo,
+            youtube,
+            appstore,
+          }) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <small className="text-light">{sub}</small>
+                <div className="portfolio__item-cta">
+                  {github ? (
+                    <a href={github} className="btn" target="_blank">
+                      Github
+                    </a>
+                  ) : null}
+                  {githubfront ? (
+                    <a href={githubfront} className="btn" target="_blank">
+                      Github Front
+                    </a>
+                  ) : null}
+                  {githubback ? (
+                    <a href={githubback} className="btn" target="_blank">
+                      Github Back
+                    </a>
+                  ) : null}
+                  {youtube ? (
+                    <a href={youtube} className="btn" target="_blank">
+                      YouTube
+                    </a>
+                  ) : null}
+                  {appstore ? (
+                    <a href={appstore} className="btn" target="_blank">
+                      App Store
+                    </a>
+                  ) : null}
 
-                {demo && id != 8 ? (
-                  <a href={demo} className="btn btn-primary" target="_blank">
-                    Live Demo
-                  </a>
-                ) : null}
-                {id == 8 ? (
-                  <a href={demo} className="btn btn-primary" target="_blank">
-                    Github Back
-                  </a>
-                ) : null}
-              </div>
-            </article>
-          );
-        })}
+                  {demo && id != 8 ? (
+                    <a href={demo} className="btn btn-primary" target="_blank">
+                      Live Demo
+                    </a>
+                  ) : null}
+                  
+                </div>
+              </article>
+            );
+          }
+        )}
       </div>
     </section>
   );
