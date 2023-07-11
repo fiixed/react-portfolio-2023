@@ -127,11 +127,12 @@ const Portfolio = () => {
                   <a href={github} className="btn" target="_blank">
                     Github Front
                   </a>
-                ) : (
+                ) : null}
+                {id != 8 && id!=12 ? (
                   <a href={github} className="btn" target="_blank">
                     Github
                   </a>
-                )}
+                ) : null}
                 {id == 12 ? (
                   <a href={github} className="btn" target="_blank">
                     YouTube
