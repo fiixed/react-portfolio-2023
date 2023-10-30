@@ -15,12 +15,12 @@ body {
 }
 
 :root {
-  --color-bg: #4c4b16;
-  --color-bg-variant: #898121;
-  --color-primary: #e7b10a;
+  --color-bg: #e76f51;
+  --color-bg-variant: #F4a261;
+  --color-primary: #e9c46a;
   --color-primary-variant: rgba(248, 111, 3, 0.4);
-  --color-white: #fff;
-  --color-light: rgba(247, 241, 229, 0.6);
+  --color-white: #2a9d8f;
+  --color-light: #264653;
 
   --transition: all 400ms ease;
 

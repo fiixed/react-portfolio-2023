@@ -1,3 +1,7 @@
+h1, h5 {
+  color: var(--color-primary);
+}
+
 header {
   height: 100vh;
   padding-top: 7rem;
