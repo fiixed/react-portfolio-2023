@@ -1,5 +1,5 @@
 h5 {
-  color: var(--color-bg)
+  color: var(--color-white);
 }
 
 .about__container {
@@ -31,7 +31,6 @@ h5 {
 
 .about__me-image:hover {
   transform: rotate(0);
-
 }
 
 .about__cards {
@@ -51,7 +50,12 @@ h5 {
 
 .about__card:hover {
   background: var(--color-white);
-  color: var(--color-bg);
+  color: black;
+  border-color: transparent;
+}
+
+.about__card:hover h5 {
+  color: var(--color-primary);
   border-color: transparent;
 }
 

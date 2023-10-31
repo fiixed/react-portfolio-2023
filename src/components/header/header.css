@@ -1,6 +1,10 @@
-h1, h4, h5 {
+h1,
+h4,
+h5 {
   color: var(--color-primary);
 }
+
+
 
 header {
   height: 100vh;
@@ -9,7 +13,7 @@ header {
 }
 
 .hey {
-  color: var(--color-primary) ;
+  color: var(--color-primary);
 }
 
 .header__container {
@@ -38,7 +42,7 @@ header {
 }
 
 .header__socials::after {
-  content: "";
+  content: '';
   width: 1px;
   height: 2rem;
   background: var(--color-primary);

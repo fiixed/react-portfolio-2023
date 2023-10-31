@@ -25,46 +25,81 @@ const Portfolio = () => {
             homepage,
           }) => {
             return (
-              <article key={id} className="portfolio__item">
-                <div className="portfolio__item-image">
+              <article key={id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
                   <img src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
-                <small className="text-light">{sub}</small>
-                <div className="portfolio__item-cta">
+                <small className='text-light'>{sub}</small>
+                <div className='portfolio__item-cta'>
                   {github ? (
-                    <a href={github} className="btn" target="_blank">
+                    <a
+                      href={github}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       Github
                     </a>
                   ) : null}
                   {githubfront ? (
-                    <a href={githubfront} className="btn" target="_blank">
+                    <a
+                      href={githubfront}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       Github Front
                     </a>
                   ) : null}
                   {githubback ? (
-                    <a href={githubback} className="btn" target="_blank">
+                    <a
+                      href={githubback}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       Github Back
                     </a>
                   ) : null}
                   {youtube ? (
-                    <a href={youtube} className="btn" target="_blank">
+                    <a
+                      href={youtube}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       YouTube
                     </a>
                   ) : null}
                   {appstore ? (
-                    <a href={appstore} className="btn" target="_blank">
+                    <a
+                      href={appstore}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       App Store
                     </a>
                   ) : null}
                   {homepage ? (
-                    <a href={homepage} className="btn" target="_blank">
+                    <a
+                      href={homepage}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       Home Page
                     </a>
                   ) : null}
 
-                  {demo && id != 8 ? (
-                    <a href={demo} className="btn btn-primary" target="_blank">
+                  {demo && id !== 8 ? (
+                    <a
+                      href={demo}
+                      className='btn-port btn-primary'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       Live Demo
                     </a>
                   ) : null}
