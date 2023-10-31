@@ -21,9 +21,15 @@
   min-width: 15rem;
 }
 
-.contact__option:hover {
+/* .contact__option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+} */
+
+.contact__option:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
 }
 
 .contact__option-icon {

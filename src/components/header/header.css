@@ -1,4 +1,4 @@
-h1, h5 {
+h1, h4, h5 {
   color: var(--color-primary);
 }
 
@@ -6,6 +6,10 @@ header {
   height: 100vh;
   padding-top: 7rem;
   overflow: hidden;
+}
+
+.hey {
+  color: var(--color-primary) ;
 }
 
 .header__container {

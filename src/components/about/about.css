@@ -31,6 +31,7 @@ h5 {
 
 .about__me-image:hover {
   transform: rotate(0);
+
 }
 
 .about__cards {
@@ -40,7 +41,7 @@ h5 {
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  background: var(--color-primary);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -49,10 +50,16 @@ h5 {
 }
 
 .about__card:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+/* .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
-}
+} */
 
 .about__icon {
   color: var(--color-bg);
