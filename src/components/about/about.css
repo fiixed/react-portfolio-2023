@@ -1,3 +1,7 @@
+h5 {
+  color: var(--color-white);
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -36,7 +40,7 @@
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  background: var(--color-primary);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -45,13 +49,24 @@
 }
 
 .about__card:hover {
+  background: var(--color-white);
+  color: black;
+  border-color: transparent;
+}
+
+.about__card:hover h5 {
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+/* .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
-}
+} */
 
 .about__icon {
-  color: var(--color-primary);
+  color: var(--color-bg);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }

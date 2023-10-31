@@ -12,7 +12,7 @@
 }
 
 .contact__option {
-  background: var(--color-bg-variant);
+  background: var(--color-primary);
   padding: 1.2rem;
   border-radius: 1.2rem;
   text-align: center;
@@ -21,9 +21,20 @@
   min-width: 15rem;
 }
 
-.contact__option:hover {
+/* .contact__option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+} */
+
+.contact__option:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.contact__option:hover h4 {
+  color: var(--color-primary);
+  border-color: transparent;
 }
 
 .contact__option-icon {
@@ -39,6 +50,12 @@
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
+  color: var(--color-bg);
+}
+
+.contact__option:hover a {
+ 
+  color: var(--color-primary);
 }
 
 /* ================= FORM ================== */
@@ -54,9 +71,14 @@ textarea {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
-  border: 2px solid var(--color-primary-variant);
+  border: 2px solid var(--color-bg-variant);
   resize: none;
-  color: var(--color-white);
+  color: var(--color-light);
+}
+
+::placeholder {
+  color: var(--color-light);
+  opacity: 1; /* Firefox */
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
