@@ -1,5 +1,5 @@
 h3 {
-  color: var(--color-bg)
+  color: var(--color-bg);
 }
 
 .btn-port {
@@ -16,7 +16,6 @@ h3 {
 .btn-port:hover {
   border-color: transparent;
 }
-
 
 .portfolio__container {
   display: grid;
@@ -52,6 +51,12 @@ h3 {
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
+  
+}
+
+#image {
+  max-height: 400px;
+  object-fit: scale-down;
 }
 
 .portfolio__item h3 {
