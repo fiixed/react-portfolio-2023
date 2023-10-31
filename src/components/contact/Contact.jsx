@@ -23,35 +23,40 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
+    <section id='contact'>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
+      <div className='container contact__container'>
+        <div className='contact__options'>
+          <article className='contact__option'>
+            <MdOutlineEmail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>andrew@andrewsherrod.com</h5>
-            <a href="mailto:andrew@andrewsherrod.com" target="_blank">
+            <a
+              href="mailto:andrew@andrewsherrod.com?subject='Hello from your Portfolio!'&body='Just popped in to say Hello!'"
+              target='_blank'
+              rel='noreferrer'
+            >
               Send a message
             </a>
           </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
+          <article className='contact__option'>
+            <RiMessengerLine className='contact__option-icon' />
             <h4>Messenger</h4>
             <h5>fiixed</h5>
-            <a href="https://m.me/fiixed" target="_blank">
+            <a href='https://m.me/fiixed' target='_blank' rel='noreferrer'>
               Send a message
             </a>
           </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
+          <article className='contact__option'>
+            <BsWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>+1 737 931 7453</h5>
             <a
-              href="https://api.whatsapp.com/send?phone=+17379317453"
-              target="_blank"
+              href="https://wa.me/17379317453?text=I'm%20interested%20in%20your%20car%20for%20sale"
+              target='_blank'
+              rel='noreferrer'
             >
               Send a message
             </a>
@@ -60,19 +65,19 @@ const Contact = () => {
         {/* END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
           <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
+            type='text'
+            name='name'
+            placeholder='Your Full Name'
             required
           />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type='email' name='email' placeholder='Your Email' required />
           <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
+            name='message'
+            rows='7'
+            placeholder='Your Message'
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type='submit' className='btn btn-primary'>
             Send Message
           </button>
         </form>
