@@ -54,7 +54,7 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <h5>+1 737 931 7453</h5>
             <a
-              href="https://wa.me/17379317453?text=I'm%20interested%20in%20your%20car%20for%20sale"
+              href="https://wa.me/17379317453?text=I'm%20interested%20in%20a%20discussion"
               target='_blank'
               rel='noreferrer'
             >
